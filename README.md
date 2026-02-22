@@ -1,66 +1,41 @@
-📌 Project Overview
+# Student File Upload Service
 
-This is a production-ready Student Management Microservice developed using Spring Boot.
-The application allows managing student records with file upload capability and is secured using Spring Security.
+Spring Boot microservice for managing student records with file upload & download support. Integrated with Eureka Service Registry and secured using Spring Security Basic Authentication.
 
-🚀 Features
+## Features
+- Add student with file upload
+- Get student by Roll Number
+- Download uploaded file
+- Delete student record
+- MySQL database integration
+- Eureka Client (Service Discovery)
+- Spring Security (Basic Auth)
+- File storage on local system
 
-✅ Add Student with File Upload
+## Tech Stack
+- Java 21
+- Spring Boot
+- Spring Data JPA
+- MySQL
+- Spring Security
+- Netflix Eureka
+- Maven
+- Lombok
+- MapStruct
 
-✅ Get Student by Roll Number
+## API Endpoints
 
-✅ Get All Students
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | /api/v1/student | Add student with file |
+| GET | /api/v1/student/{rollNo} | Get student by ID |
+| DELETE | /api/v1/student/{rollNo} | Delete student |
+| GET | /api/v1/student/download/{rollNo} | Download file |
 
-✅ Delete Student
+## Security
+Basic Authentication enabled  
+Username: `tanisha`  
+Password: `12345`
 
-✅ Download Uploaded File
-
-✅ Spring Security (Basic Authentication)
-
-✅ MySQL Database Integration
-
-✅ JPA & Hibernate
-
-✅ Validation & Exception Handling
-
-✅ Eureka Client (Service Registration)
-
-✅ Logging Configuration
-
-🛠️ Tech Stack
-
-Java 21
-
-Spring Boot 3.2
-
-Spring Data JPA
-
-Spring Security
-
-MySQL
-
-Hibernate
-
-Lombok
-
-MapStruct
-
-Netflix Eureka
-
-Maven
-
-🔐 Security
-
-Basic Authentication enabled
-
-Secured APIs
-
-Configurable credentials via application.properties
-
-📦 API Endpoints
-Method	Endpoint	Description
-POST	/api/v1/student	Add student with file
-GET	/api/v1/student/{rollNo}	Get student by ID
-GET	/api/v1/student	Get all students
-DELETE	/api/v1/student/{rollNo}	Delete student
-GET	/api/v1/student/download/{rollNo}	Download file
+## Author
+Tanisha Waghilkar
